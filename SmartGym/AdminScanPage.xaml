@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="SmartGym.AdminScanPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartGym"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:gif="using:XamlAnimatedGif">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill"
+                        ImageSource="Assets/bg2.jpg"/>
+        </Grid.Background>
+
+        <Image x:Name="logoImage" HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="228" Source="Assets/logo.png" RequestedTheme="Dark" Margin="60,6,0,0"/>
+        <TextBlock x:Name="touchTextBlock" HorizontalAlignment="Left" Height="51" Margin="21,182,0,0" TextWrapping="Wrap" Text="Please Touch NFC" VerticalAlignment="Top" Width="230" Foreground="White" FontSize="24" FontWeight="Bold" />
+        <Image x:Name="touchCheckImage" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="41" Source="Assets/check.png" RequestedTheme="Dark" Margin="263,173,0,0"/>
+        <TextBlock x:Name="notFoundTextBlock" HorizontalAlignment="Left" Height="35" Margin="21,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" FontSize="18" FontWeight="Bold" RequestedTheme="Dark" Text="The device is not in the device list"/>
+        <TextBlock x:Name="devNameTextBlock" HorizontalAlignment="Left" Height="22" Margin="21,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" FontSize="14" FontWeight="Bold" RequestedTheme="Dark" Text="Device name: "/>
+
+        <TextBlock x:Name="debugTextBlock" HorizontalAlignment="Left" Height="206" Margin="21,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="303" FontSize="12" Foreground="White" RequestedTheme="Dark"/>
+        <Image x:Name="nfcGuideImage" HorizontalAlignment="Left" Height="159" Margin="30,294,0,0" VerticalAlignment="Top" Width="283" gif:AnimationBehavior.SourceUri="Assets/NfcGuide.gif" RequestedTheme="Dark"/>
+        <Button x:Name="addDevButton" Content="Add device" HorizontalAlignment="Left" Margin="102,307,0,0" VerticalAlignment="Top" RequestedTheme="Dark" Height="50" Width="124" FontWeight="Bold" Click="addDevButton_Click" FontSize="18"/>
+    </Grid>
+</Page>

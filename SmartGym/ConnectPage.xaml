@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="SmartGym.ConnectPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartGym"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:gif="using:XamlAnimatedGif">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill"
+                        ImageSource="Assets/bg2.jpg"/>
+        </Grid.Background>
+
+        <Image x:Name="logoImage" HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="228" Source="Assets/logo.png" RequestedTheme="Dark" Margin="60,6,0,0"/>
+        <TextBlock x:Name="touchTextBlock" HorizontalAlignment="Left" Height="51" Margin="21,182,0,0" TextWrapping="Wrap" Text="Please Touch NFC" VerticalAlignment="Top" Width="230" Foreground="White" FontSize="24" FontWeight="Bold" />
+        <Image x:Name="touchCheckImage" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="41" Source="Assets/check.png" RequestedTheme="Dark" Margin="263,173,0,0"/>
+        <TextBlock x:Name="connectingTextBlock" HorizontalAlignment="Left" Height="35" Margin="21,238,0,0" TextWrapping="Wrap" Text="Connecting..." VerticalAlignment="Top" Width="190" FontSize="24" FontWeight="Bold" Foreground="#FFFFF2F2"/>
+        <Image x:Name="connectingCheckImage" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="41" Source="Assets/check.png" RequestedTheme="Dark" Margin="263,229,0,0"/>
+
+        <TextBlock x:Name="debugTextBlock" HorizontalAlignment="Left" Height="206" Margin="21,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="303" FontSize="12" Foreground="White" RequestedTheme="Dark"/>
+        <Image x:Name="nfcGuideImage" HorizontalAlignment="Left" Height="159" Margin="30,294,0,0" VerticalAlignment="Top" Width="283" gif:AnimationBehavior.SourceUri="Assets/NfcGuide.gif" RequestedTheme="Dark"/>
+    </Grid>
+</Page>
